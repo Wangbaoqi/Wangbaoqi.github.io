@@ -27,9 +27,30 @@
     if('serviceWorker' in navigator) {
       sup.innerHTML = 'current brower is supported'
 
-      navigator.serviceWorker.register('./index.js', { scope: '/'})
+      navigator.serviceWorker.register('./index.js', { scope: './'})
         .then((reg) => {
-          console.log(reg, 'reg')
+          reg.innerHTML = '注册成功'
+
+          var serviceWorker;
+
+          if(reg.installing) {
+            serviceWorker = reg.installing;
+            regsta.innerHTML = 'installing'
+          }else if(reg.waiting) {
+            serviceWorker = reg.waiting;
+            regsta.innerHTML = 'waiting'
+          }else if(reg.active) {
+            serviceWorker = reg.active;
+            regsta.innerHTML = 'active'
+          }
+
+          if(serviceWorker) {
+            sta.innerHTML = serviceWorker.state
+
+            serviceWorker.addEventListener('statechange', (e) => {
+              sta.innerHTML += e.target.state
+            })
+          }
         })
     }else {
       sup.innerHTML = 'current brower is not supported'
