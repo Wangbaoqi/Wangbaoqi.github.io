@@ -20,7 +20,7 @@
 
   <script>
     var sup = document.getElementById('isSupport');
-    var reg = document.getElementById('isSuccess');
+    var regs = document.getElementById('isSuccess');
     var regsta = document.getElementById('state');
     var sta = document.getElementById('swState');
 
@@ -29,7 +29,7 @@
 
       navigator.serviceWorker.register('./index.js', { scope: './'})
         .then((reg) => {
-          reg.innerHTML = '注册成功'
+          regs.innerHTML = '注册成功'
 
           var serviceWorker;
 
