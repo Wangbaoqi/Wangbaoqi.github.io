@@ -5,8 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Case demo</title>
+
+  <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../css/theme.css">
+
+
 </head>
 <body>
   
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project Case</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container theme-showcase" role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>Theme example</h1>
+      <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+    </div>
+
+
+    <ul class="nav nav-tabs">
+			<li class="active"><a href="#html" data-toggle="tab">HTML Case</a></li>
+			<li><a href="#css" data-toggle="tab">CSS Case</a></li>
+			<li><a href="#js" data-toggle="tab">JavaScript Case</a></li>
+		</ul>
+
+    <div class="tab-content ">
+      <div class="tab-pane active" id="html">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Service Work demo</h3>
+                <p>...</p>
+                <p><a href="./serviceWork/index.html" class="btn btn-default" role="button">navigate to detail</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="css">
+        <h3>Notice the gap between the content and tab after applying a background color</h3>
+      </div>
+      <div class="tab-pane" id="js">
+        <h3>add clearfix to tab-content (see the css)</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>
