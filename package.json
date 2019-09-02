@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Wangbaoqi/Wangbaoqi.github.io#readme",
   "dependencies": {
-    "bootstrap": "^4.1.3"
+    "bootstrap": "^4.3.1"
   }
 }
