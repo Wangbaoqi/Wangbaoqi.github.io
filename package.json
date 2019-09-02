@@ -1,0 +1,22 @@
+{
+  "name": "nate.github.io",
+  "version": "1.0.0",
+  "description": "nate github server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wangbaoqi/Wangbaoqi.github.io.git"
+  },
+  "author": "nate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wangbaoqi/Wangbaoqi.github.io/issues"
+  },
+  "homepage": "https://github.com/Wangbaoqi/Wangbaoqi.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
